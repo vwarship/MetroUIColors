@@ -8,10 +8,10 @@ public class GridViewUtil
 {
 	static public int calcItemWidth(Activity activity)
 	{
-      Resources r = activity.getResources();
-      float padding = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 48, r.getDisplayMetrics());
-
-      final int screenWidth = SystemMetadata.getScreenWidth(activity);
-      return (int) ( (screenWidth-padding) / 3);
+		Resources r = activity.getResources();
+		float padding = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 48, r.getDisplayMetrics());
+		
+		final int screenWidth = SystemMetadata.getScreenWidth(activity);
+		return (int) ( (screenWidth-padding) / 3);
 	}
 }

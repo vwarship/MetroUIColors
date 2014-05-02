@@ -1,23 +1,18 @@
 package com.zaoqibu.metrouicolors;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import com.zaoqibu.metrouicolors.util.GridViewUtil;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
+import android.content.Intent;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
-import android.widget.SimpleAdapter;
-import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -29,7 +24,8 @@ public class MainActivity extends Activity {
 	}
 	
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState)
+	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
@@ -40,7 +36,8 @@ public class MainActivity extends Activity {
 		gridView.setOnItemClickListener(new OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-				Toast.makeText(getBaseContext(), position+"", Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent(MainActivity.this, ColorDetailActivity.class);
+				startActivity(intent);
 			}
 		});
 	}
