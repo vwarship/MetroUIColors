@@ -8,6 +8,7 @@ import java.util.Map;
 import com.zaoqibu.metrouicolors.util.GridViewUtil;
 
 import android.os.Bundle;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.view.Menu;
@@ -176,6 +177,7 @@ public class MainActivity extends Activity
 				"100, -0.006, -0.013", "100, -5.342, 5.435", "11111111, 11111111, 11111111"}));
 	}
 	
+	@SuppressLint("UseSparseArrays")
 	private MetroUIColor createMetroUIColor(Integer colorNameId, String[] values)
 	{
 		Map<Integer, String> kvs = new HashMap<Integer, String>();

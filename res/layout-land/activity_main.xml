@@ -19,7 +19,7 @@
         android:verticalSpacing="@dimen/activity_gridview_spacing"
         android:stretchMode="columnWidth"
         android:gravity="center"
-        android:numColumns="3" >
+        android:numColumns="5" >
     </GridView>
 
 </RelativeLayout>
