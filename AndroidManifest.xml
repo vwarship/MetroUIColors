@@ -23,7 +23,13 @@
             </intent-filter>
         </activity>
         
-        <activity android:name=".ColorDetailActivity"/>
+        <activity android:name=".ColorDetailActivity"
+            android:parentActivityName="com.zaoqibu.metrouicolors.MainActivity">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+				android:value="com.zaoqibu.metrouicolors.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
