@@ -4,5 +4,40 @@
     <string name="app_name">Metro UI Colors</string>
     <string name="action_settings">Settings</string>
     <string name="contentdesc_griditem">color</string>
-
+    
+    <string name="color_light_green">Light Green</string>
+    <string name="color_green">Green</string>
+    <string name="color_dark_green">Dark Green</string>
+    <string name="color_magenta">Magenta</string>
+    <string name="color_light_purple">Light Purple</string>
+    <string name="color_purple">Purple</string>
+    <string name="color_dark_purple">Dark Purple</string>
+    <string name="color_darken">Darken</string>
+    <string name="color_teal">Teal</string>
+    <string name="color_light_blue">Light Blue</string>
+    <string name="color_blue">Blue</string>
+    <string name="color_dark_blue">Dark Blue</string>
+    <string name="color_yellow">Yellow</string>
+    <string name="color_orange">Orange</string>
+    <string name="color_dark_orange">Dark Orange</string>
+    <string name="color_red">Red</string>
+    <string name="color_dark_red">Dark Red</string>
+    <string name="color_white">White</string>
+    
+    <string name="color_detail_name">Name</string>
+    <string name="color_detail_hex_color_code">Hex color code</string>
+    <string name="color_detail_rgb_decimal">RGB Decimal</string>
+    <string name="color_detail_rgb_percent">RGB Percent</string>
+    <string name="color_detail_cmyk">CMYK</string>
+    <string name="color_detail_hsl">HSL</string>
+    <string name="color_detail_hsv_or_hsb">HSV / HSB</string>
+    <string name="color_detail_web_safe">Web Safe</string>
+    <string name="color_detail_cie_lab">CIE-LAB</string>
+    <string name="color_detail_xyz">XYZ</string>
+    <string name="color_detail_xyy">xyY</string>
+    <string name="color_detail_cie_lch">CIE-LCH</string>
+    <string name="color_detail_cie_luv">CIE-LUV</string>
+    <string name="color_detail_hunter_lab">Hunter-Lab</string>
+    <string name="color_detail_rgb_binary">RGB Binary</string>
+    
 </resources>

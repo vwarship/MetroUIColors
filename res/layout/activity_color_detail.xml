@@ -7,16 +7,15 @@
     <ImageView
         android:id="@+id/colorDetailImageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/ic_launcher" />
+        android:layout_height="120dp" />
 
-    <EditText
-        android:id="@+id/colorDetailName"
+    <ListView
+        android:id="@+id/colorDetailListView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
+        android:background="@color/black"
+        android:divider="@color/dark_gray"
+        android:dividerHeight="1px" >
+    </ListView>
 
 </LinearLayout>
