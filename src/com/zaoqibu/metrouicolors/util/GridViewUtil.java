@@ -7,12 +7,15 @@ import android.util.TypedValue;
 
 public class GridViewUtil
 {
+	private static int PORTRAIT_GRIDVIEW_COLUMN_NUMBER = 3;
+	private static int LANDSCAPE_GRIDVIEW_COLUMN_NUMBER = 5;
+	
 	static public int calcItemWidth(Activity activity)
 	{
-		int colNum = 3;
+		int colNum = PORTRAIT_GRIDVIEW_COLUMN_NUMBER;
 		boolean isLand = isScreenOrientationLandscape(activity);
 		if (isLand)
-			colNum = 5;
+			colNum = LANDSCAPE_GRIDVIEW_COLUMN_NUMBER;
 		
 		Resources r = activity.getResources();
 		float padding = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 

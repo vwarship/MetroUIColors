@@ -10,7 +10,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true" 
         android:scaleType="centerCrop"
-        android:contentDescription="@string/contentdesc_griditem"/>
+        android:contentDescription="@string/contentdesc_color"/>
 
     <TextView
         android:id="@+id/itemText"
