@@ -3,7 +3,7 @@
 
     <string name="app_name">磁贴界面颜色</string>
     <string name="action_settings">设置</string>
-    <string name="contentdesc_griditem">颜色</string>
+    <string name="contentdesc_color">颜色</string>
     
     <string name="color_light_green">浅绿色</string>
     <string name="color_green">绿色</string>

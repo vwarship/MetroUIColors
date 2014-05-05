@@ -1,51 +1,24 @@
 package com.zaoqibu.metrouicolors;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.zaoqibu.metrouicolors.util.GridViewUtil;
-
-import android.os.Bundle;
 import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.content.Intent;
-import android.view.Menu;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.GridView;
 
-public class MainActivity extends Activity
+public class MetroUIColors implements Serializable
 {
+	private static final long serialVersionUID = 2602185984704762235L;
+	
 	private List<Integer> colorDetailKeys = new ArrayList<Integer>();
 	private List<MetroUIColor> colors = new ArrayList<MetroUIColor>();
 	
-	public MainActivity()
+	public MetroUIColors()
 	{
 		initMetroUIColorKeys();
 		initMetroUIColors();
-	}
-	
-	@Override
-	protected void onCreate(Bundle savedInstanceState)
-	{
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
-		
-		final int calcGridItemWidth = GridViewUtil.calcItemWidth(this);
-		
-		GridView gridView = (GridView)findViewById(R.id.gridView);
-		gridView.setAdapter(new ColorAdapter(this, calcGridItemWidth, colors));
-		gridView.setOnItemClickListener(new OnItemClickListener() {
-			@Override
-			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-				Intent intent = new Intent(MainActivity.this, ColorDetailActivity.class);
-				intent.putExtra("color", colors.get(position));
-				startActivity(intent);
-			}
-		});
 	}
 
 	private void initMetroUIColorKeys()
@@ -189,11 +162,14 @@ public class MainActivity extends Activity
 		return new MetroUIColor(colorNameId, colorDetailKeys, kvs);
 	}
 	
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
+	public MetroUIColor get(int position)
+	{
+		return colors.get(position);
 	}
-
+	
+	public int count()
+	{
+		return colors.size();
+	}
+	
 }

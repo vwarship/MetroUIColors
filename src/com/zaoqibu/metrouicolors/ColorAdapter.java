@@ -1,7 +1,5 @@
 package com.zaoqibu.metrouicolors;
 
-import java.util.List;
-
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
@@ -17,9 +15,9 @@ public class ColorAdapter extends BaseAdapter
 	private Context context;
 	private int calcGridItemWidth;
 	
-	private List<MetroUIColor> colors;
+	private MetroUIColors colors;
 	
-	public ColorAdapter(Context context, int calcGridItemWidth, List<MetroUIColor> colors)
+	public ColorAdapter(Context context, int calcGridItemWidth, MetroUIColors colors)
 	{
 		this.context = context;
 		this.calcGridItemWidth = calcGridItemWidth;
@@ -28,7 +26,7 @@ public class ColorAdapter extends BaseAdapter
 
 	@Override
 	public int getCount() {
-		return colors.size();
+		return colors.count();
 	}
 
 	@Override
@@ -59,11 +57,13 @@ public class ColorAdapter extends BaseAdapter
 			item = convertView;
 		}
 		
+		MetroUIColor color = colors.get(position);
+		
 		ImageView imageView = (ImageView)item.findViewById(R.id.itemImage);
-		imageView.setBackgroundColor(Color.parseColor(colors.get(position).getHexColorCode()));
+		imageView.setBackgroundColor(Color.parseColor(color.getHexColorCode()));
 		
 		TextView textView = (TextView)item.findViewById(R.id.itemText);
-		textView.setText(colors.get(position).getName());
+		textView.setText(color.getName());
 		
 		return item;
 	}
