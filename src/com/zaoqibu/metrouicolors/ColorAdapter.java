@@ -1,5 +1,8 @@
 package com.zaoqibu.metrouicolors;
 
+import com.zaoqibu.metrouicolors.domain.MetroUIColor;
+import com.zaoqibu.metrouicolors.domain.MetroUIColors;
+
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;

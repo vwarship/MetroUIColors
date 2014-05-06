@@ -1,8 +1,10 @@
-package com.zaoqibu.metrouicolors;
+package com.zaoqibu.metrouicolors.domain;
 
 import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
+
+import com.zaoqibu.metrouicolors.R;
 
 public class MetroUIColor implements Serializable
 {

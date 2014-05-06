@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.zaoqibu.metrouicolors.domain.MetroUIColor;
+import com.zaoqibu.metrouicolors.domain.MetroUIColors;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
