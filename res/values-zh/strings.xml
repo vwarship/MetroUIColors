@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">磁贴界面颜色</string>
+    <string name="action_overflow">更多</string>
+    <string name="action_about">关于</string>
+    <string name="contentdesc_color">颜色</string>
+    
+    <string name="color_light_green">浅绿色</string>
+    <string name="color_green">绿色</string>
+    <string name="color_dark_green">深绿色</string>
+    <string name="color_magenta">品红</string>
+    <string name="color_light_purple">浅紫色</string>
+    <string name="color_purple">紫色</string>
+    <string name="color_dark_purple">暗紫色</string>
+    <string name="color_darken">暗黑色</string>
+    <string name="color_teal">水鸭色</string>
+    <string name="color_light_blue">浅蓝色</string>
+    <string name="color_blue">蓝色</string>
+    <string name="color_dark_blue">深蓝色</string>
+    <string name="color_yellow">黄色</string>
+    <string name="color_orange">橙色</string>
+    <string name="color_dark_orange">深橙色</string>
+    <string name="color_red">红色</string>
+    <string name="color_dark_red">暗红色</string>
+    <string name="color_white">白色</string>
+
+    <string name="color_detail_name">名字</string>
+    <string name="color_detail_hex_color_code">十六进制颜色代码</string>
+    <string name="color_detail_rgb_decimal">RGB十进制</string>
+    <string name="color_detail_rgb_percent">RGB百分比</string>
+    <string name="color_detail_cmyk">CMYK</string>
+    <string name="color_detail_hsl">HSL</string>
+    <string name="color_detail_hsv_or_hsb">HSV / HSB</string>
+    <string name="color_detail_web_safe">网络安全色</string>
+    <string name="color_detail_cie_lab">CIE-LAB</string>
+    <string name="color_detail_xyz">XYZ</string>
+    <string name="color_detail_xyy">xyY</string>
+    <string name="color_detail_cie_lch">CIE-LCH</string>
+    <string name="color_detail_cie_luv">CIE-LUV</string>
+    <string name="color_detail_hunter_lab">Hunter-Lab</string>
+    <string name="color_detail_rgb_binary">RGB二进制</string>
+    
+</resources>
