@@ -23,4 +23,4 @@ local.properties
 proguard/
 
 # Eclipse configuration file
-.metadata/"ant.properties" 
+.metadata/
